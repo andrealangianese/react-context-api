@@ -1,0 +1,11 @@
+import { Link } from "react-router-dom"
+
+export default function PageNotFound() {  
+    return (
+        <>
+            <h2>404 - Pagina non trovata</h2>
+            <p>La pagina che stai cercando non esiste.</p>
+            <Link to="/">Torna alla home a spendere i tuoi soldi</Link>
+        </>
+    )
+ }

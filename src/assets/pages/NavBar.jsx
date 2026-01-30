@@ -31,7 +31,7 @@ export default function NavBar() {
                             </NavLink>
                         </li>
                     )
-                    )}
+                    )} 
                 </ul>
             </nav>
         </>
