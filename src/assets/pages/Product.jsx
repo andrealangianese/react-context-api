@@ -35,7 +35,6 @@ function Products() {
 
     return (
         <>
-        <NavBar />
             <h3>i nostri prodotti</h3>
             {budgetMode ? (
                 <p>Filtrando: prodotti sotto i 30€</p>

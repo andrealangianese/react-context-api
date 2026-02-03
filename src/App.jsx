@@ -20,6 +20,8 @@ function App() {
     <BudgetProvider>
       <BrowserRouter>
         <h1>eccoti</h1>
+        {/* navbar sempre visibile */}
+        <NavBar />
         <Routes>
           {/* in questo caso mostrerà solo homepage + h1 che effettivamente è gia presente */}
           <Route path="/" element={<HomePage />} />
