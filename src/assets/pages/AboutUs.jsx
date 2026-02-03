@@ -5,7 +5,6 @@ function AboutUs() {
 
     return (
         <>
-            <NavBar />
             <h3>su di noi</h3>
         </>
     )

@@ -10,6 +10,7 @@ import Products from "./assets/pages/Product"
 import NavBar from "./assets/pages/NavBar"
 import DetailProducts from "./assets/pages/DetailProducts"
 import PageNotFound from "./assets/pages/PageNotFound"
+
 import { BudgetProvider } from "./contexts/BudgetContext"
 
 function App() {
@@ -19,7 +20,6 @@ function App() {
     <BudgetProvider>
       <BrowserRouter>
         <h1>eccoti</h1>
-        <NavBar />
         <Routes>
           {/* in questo caso mostrerà solo homepage + h1 che effettivamente è gia presente */}
           <Route path="/" element={<HomePage />} />

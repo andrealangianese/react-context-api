@@ -1,7 +1,11 @@
 import { Link, NavLink } from "react-router-dom";
+import { useBudget } from "../../contexts/BudgetContext";
 
 export default function NavBar() {
-
+    const { budgetMode, setBudgetMode } = useBudget()
+    function handleChangeBudget(){
+        setBudgetMode(!budgetMode)
+    }
     //generalizzo e raggruppo voci navbar
 
     const links = [
@@ -22,9 +26,10 @@ export default function NavBar() {
                     <li>
                         <NavLink to="/our-products">I nostri Prodotti </NavLink>
                     </li> */}
-
+                    <h2>sono la navbar</h2>
+                    <button onClick={handleChangeBudget}>{budgetMode ? "Mostra tutti" : "Prodotti sotto i 30€"}</button>
                     {links.map(link => (
-                        <li key={link.id}>
+                        <li key={link.riferimento}>
                             <NavLink to={link.riferimento}>
                                 
                                 {link.descrizioneEvento}
